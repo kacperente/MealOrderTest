@@ -1,0 +1,5 @@
+--ignore-dir=vendor
+--ignore-dir=.idea
+--ignore-dir=docker
+--ignore-dir=app/logs
+--ignore-dir=app/cache

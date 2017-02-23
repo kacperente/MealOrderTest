@@ -1,0 +1,71 @@
+{
+    "name": "mealOrder",
+    "config": {
+        "bin-dir": "bin",
+        "process-timeout": 86400
+    },
+    "description": "",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:lemondemon/silex-middlewares.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:lemondemon/php-request-tracking.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:lemondemon/php-service-discovery-client.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:lemondemon/php-communication-standards.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:lemondemon/php-logger.git"
+        },
+        {
+          "type": "vcs",
+          "url": "git@github.com:lemondemon/symfony-listeners.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:lemondemon/php-logger.git"
+        }
+    ],
+    "require": {
+        "silex/silex": "^2.0",
+        "monolog/monolog": "^1.18",
+        "symfony/serializer": "^2.8|^3.0",
+        "doctrine/dbal": "~2.5",
+        "dflydev/doctrine-orm-service-provider": "^2.0",
+
+        "eden/php-communication-standards": "~1.2",
+
+        "ld/silex-middlewares": "^2.0.2",
+        "ld/php-request-tracking": "^2.0.2",
+        "ld/php-logger": "^2.0.2",
+        "ld/symfony-listeners": "^2.0.0"
+    },
+    "require-dev": {
+        "sorien/silex-pimple-dumper": "^2.0",
+        "phpunit/phpunit": "^5.0",
+        "silex/web-profiler": "^2.0",
+        "symfony/browser-kit": "^2.8|^3.0",
+        "symfony/css-selector": "^2.8|^3.0",
+        "symfony/var-dumper": "^2.8|^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eden\\MealOrder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eden\\MealOrder\\Tests\\": "test/"
+        }
+    }
+}
